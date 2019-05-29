@@ -8,6 +8,5 @@ import javax.inject.Inject
 class NewsUpdatesRepoImpl @Inject constructor(val newsApiService : NewsApiService): NewsUpdatesRepo {
     override fun getNewsUpdates(apikey: String, source: String): Single<NewsUpdatesResponseModel> {
         return newsApiService.getNewsUpdates(apikey,source)
-
     }
 }

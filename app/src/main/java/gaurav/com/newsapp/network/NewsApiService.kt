@@ -6,6 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface NewsApiService {
-    @GET()
-    fun getNewsUpdates(@Query("sources") source : String, @Query("apiKey") key : String) : Single<NewsUpdatesResponseModel>
+
+    @GET("v2/top-headlines")
+    fun getNewsUpdates(@Query("apiKey") key : String, @Query("sources") source : String) : Single<NewsUpdatesResponseModel>
 }

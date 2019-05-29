@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <TextView
+                android:id="@+id/tv_title_feeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Kustomer raises $40M more led by Tiger Global for its omnichannel approach to CRM"
+                />
+
+        <TextView
+                android:id="@+id/tv_content_feeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="On the heels of customer service company Zendesk announcing an acquisition to expand its omni-channel offering, one of the upstarts nipping at its heels has announced a round of funding to continue growing its own platform.\r\nKustomer, a customer service start… [+4467 chars]"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
