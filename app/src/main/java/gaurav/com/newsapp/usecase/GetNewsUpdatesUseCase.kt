@@ -8,11 +8,10 @@ import gaurav.com.newsapp.repo.NewsUpdatesRepo
 import io.reactivex.Single
 import javax.inject.Inject
 
-
 class GetNewsUpdatesUseCase @Inject constructor(val newsUpdatesRepo: NewsUpdatesRepo, val newsUpdateToUiMapper: NewsUpdateToUiMapper): SingleUseCaseWithParams<NewsUpdatesUIModel>(){
     override fun execute(): Single<NewsUpdatesUIModel> {
         Log.d("TAG4","message")
-        return newsUpdatesRepo.getNewsUpdates(NEWS_API_KEY,"techcrunch")
+        return newsUpdatesRepo.getNewsUpdates(NEWS_API_KEY,"google-news")
             .map { newsUpdateToUiMapper.map(it) }
     }
 }

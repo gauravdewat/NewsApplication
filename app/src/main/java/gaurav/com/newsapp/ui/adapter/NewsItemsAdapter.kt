@@ -7,6 +7,7 @@ import gaurav.com.newsapp.R
 import gaurav.com.newsapp.models.NewsArticlesModel
 import gaurav.com.newsapp.models.NewsItems
 
+
 class NewsItemsAdapter(var newsItemsList: List<NewsItems> = ArrayList()): RecyclerView.Adapter<NewsItemsViewHolder>(){
 
     fun setNewsItem(newsItemsList: List<NewsItems>){

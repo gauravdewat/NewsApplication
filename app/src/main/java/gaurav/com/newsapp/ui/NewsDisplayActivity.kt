@@ -21,7 +21,7 @@ class NewsDisplayActivity : DaggerAppCompatActivity() {
 
     lateinit var viewModel: NewsDisplayViewModel
 
-    enum class UI_STATE {
+    enum class UI_STATE{
         LOADING, SUCCESS, FAILURE
     }
 
